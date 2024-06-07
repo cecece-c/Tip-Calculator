@@ -1,4 +1,4 @@
-# Import math library
+# Import 'math' library
 import math
 
 

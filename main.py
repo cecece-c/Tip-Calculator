@@ -1,4 +1,4 @@
-# Import 'math' and 'time' library
+# Import 'math' and 'time' libraries
 import math, time
 
 

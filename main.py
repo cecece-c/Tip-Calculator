@@ -1,5 +1,5 @@
-# Import 'math' library
-import math
+# Import 'math' and 'time' library
+import math, time
 
 
 # Display banner
@@ -48,3 +48,9 @@ payable_per_person = round(total_bill / number_of_people, 2)
 
 # Diplay amount payable per person
 print(f"\nEach person should pay:\n${payable_per_person:.2f}")
+
+
+# Exit program
+print("\nProgram exiting...")
+for delay in range(5):
+    time.sleep(1)

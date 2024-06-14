@@ -6,7 +6,7 @@ import math, time
 print("\nWelcome to the Tip Calculator.")
 
 
-# Get total bill, tip percentage and number of people, and store values in 'total_bill', 'tip_percentage' and 'number_of_people' respectively
+# Get total bill, tip percentage and number of people, and store values in 'total_bill' (Float), 'tip_percentage' (String) and 'number_of_people' (Float) respectively
 while True:
     try:
         total_bill = float(input("\nWhat was the total bill?\n$"))

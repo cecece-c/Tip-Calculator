@@ -10,30 +10,33 @@ print("\nWelcome to the Tip Calculator.")
 while True:
     try:
         total_bill = float(input("\nWhat was the total bill?\n$"))
-        tip_percentage = input("\nWhat percentage of tip would you like to give? (5%, 10% or 15%)\n")
-        if tip_percentage == "5%" or tip_percentage == "5":
-            tip_percentage = 0.05
-            number_of_people = math.ceil(float(input("\nHow many people will the bill be split between?\n")))
-            if number_of_people >= 1:
-                break
+        if total_bill > 0.00:
+            tip_percentage = input("\nWhat percentage of tip would you like to give? (5%, 10% or 15%)\n")
+            if tip_percentage == "5%" or tip_percentage == "5":
+                tip_percentage = 0.05
+                number_of_people = math.ceil(float(input("\nHow many people will the bill be split between?\n")))
+                if number_of_people >= 1:
+                    break
+                else:
+                    print("\nInvalid input. Only numbers above 1 are accepted.")
+            elif tip_percentage == "10%" or tip_percentage == "10":
+                tip_percentage = 0.10
+                number_of_people = math.ceil(float(input("\nHow many people will the bill be split between?\n")))
+                if number_of_people >= 1:
+                    break
+                else:
+                    print("\nInvalid input. Only numbers above 1 are accepted.")
+            elif tip_percentage == "15%" or tip_percentage == "15":
+                tip_percentage = 0.15
+                number_of_people = math.ceil(float(input("\nHow many people will the bill be split between?\n")))
+                if number_of_people >= 1:
+                    break
+                else:
+                    print("\nInvalid input. Only numbers above 1 are accepted.")
             else:
-                print("\nInvalid input. Only numbers above 1 are accepted.")
-        elif tip_percentage == "10%" or tip_percentage == "10":
-            tip_percentage = 0.10
-            number_of_people = math.ceil(float(input("\nHow many people will the bill be split between?\n")))
-            if number_of_people >= 1:
-                break
-            else:
-                print("\nInvalid input. Only numbers above 1 are accepted.")
-        elif tip_percentage == "15%" or tip_percentage == "15":
-            tip_percentage = 0.15
-            number_of_people = math.ceil(float(input("\nHow many people will the bill be split between?\n")))
-            if number_of_people >= 1:
-                break
-            else:
-                print("\nInvalid input. Only numbers above 1 are accepted.")
+                print("\nInvalid input. Only listed percentages are accepted.")
         else:
-            print("\nInvalid input. Only listed percentages are accepted.")
+            print("\nInvalid input. Only numbers above 0 are accepted.")
     except ValueError:
         print("\nInvalid input. Only numbers are accepted.")
 

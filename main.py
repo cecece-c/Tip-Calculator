@@ -10,7 +10,7 @@ print("\nWelcome to the Tip Calculator.")
 while True:
     try:
         total_bill = float(input("\nWhat was the total bill?\n$"))
-        if total_bill > 0.00:
+        if total_bill > 0:
             tip_percentage = input("\nWhat percentage of tip would you like to give? (5%, 10% or 15%)\n")
             if tip_percentage == "5%" or tip_percentage == "5":
                 tip_percentage = 0.05

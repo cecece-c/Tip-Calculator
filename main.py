@@ -57,6 +57,6 @@ print(f"\nEach person should pay:\n${payable_per_person:.2f}")
 print("\nProgram exiting...")
 
 
-# Exit program
+# Exit program after 5 second delay
 for delay in range(5):
     time.sleep(1)
